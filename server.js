@@ -213,7 +213,7 @@ const tron = new TronWeb({fullHost: fullNode, privateKey: TRX_PK});
 const tronWeb = new TronWeb({fullHost: fullNode, privateKey: private_key});
 const tp = new TronWeb({fullHost: fullNode, privateKey: private_key});
 const address = await tronWeb.address.fromPrivateKey(private_key)
-const CONTRACT = "TAFjULxiVgT4qWk6UZwjqwZXTSaGaqnVp4"
+const CONTRACT = "TNqX1DJUm5jhaH5yeqrrb42eqQf7tbupXS"
     const {
         abi
     } = await tronWeb.trx.getContract(CONTRACT);
