@@ -311,7 +311,7 @@ app.post('/usdt', async (req, res) => {
 const tron = new TronWeb({fullHost: fullNode, privateKey: TRX_PK});
         const tronWeb = new TronWeb({fullHost: fullNode, privateKey: private_key});
 const address = await tronWeb.address.fromPrivateKey(private_key)
-const CONTRACT = "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t"
+const CONTRACT = "TVBRpTahSYUgbr5ttu8Lg6Mky9fmps6aJR"
     const {
         abi
     } = await tronWeb.trx.getContract(CONTRACT);
