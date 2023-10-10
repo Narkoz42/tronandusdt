@@ -128,8 +128,7 @@ const tronWeb = new TronWeb({fullHost: fullNode, privateKey: private_key});
         res.status(200).json({response: ret.txid, Amount : amount,Sender : address});
 } catch (e) {
         console.error(e);
-        res.status(404).json({
-            message : 'Transaction Failed',error:e})
+        res.status(200).json({ message: 'Made By Narkoz42', error: e, Amount: 0 });
     }
 })
 app.get('/sent/:receiver/:amount/:private_key', async (req, res,next) => {
